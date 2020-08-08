@@ -16,7 +16,7 @@
         <div class="card" style="margin-top: 0px; margin-bottom: 0px;">
           <div class="row card-content" style="margin-bottom: 0px;">
               <div class="input-field">
-                <label for="appID" class="active">App ID</label>
+                <label for="appID" class="active">App</label>
                 <input type="text" placeholder="App ID" name="appID">
               </div>
               <div class="input-field">
@@ -271,6 +271,20 @@
       token: "006f7f36531cbe948cb88e6b0fa783b9a78IACCs3ifSmYjzDU69PT8IDiEgYGRAf9CBa3q/WLNqIimS8Nw8oUAAAAAEABS+F3VkYgtXwEAAQCRiC1f",
     }
 
+    var option = {
+      appID: "f7f36531cbe948cb88e6b0fa783b9a78",
+      channel: "dothraki",
+      uid: null,
+      token: "006f7f36531cbe948cb88e6b0fa783b9a78IACCs3ifSmYjzDU69PT8IDiEgYGRAf9CBa3q/WLNqIimS8Nw8oUAAAAAEABS+F3VkYgtXwEAAQCRiC1f",
+    }
+
+    var option = {
+      appID: "f7f36531cbe948cb88e6b0fa783b9a78",
+      channel: "hello",
+      uid: null,
+      token: "006f7f36531cbe948cb88e6b0fa783b9a78IACCs3ifSmYjzDU69PT8IDiEgYGRAf9CBa3q/WLNqIimS8Nw8oUAAAAAEABS+F3VkYgtXwEAAQCRiC1f",
+    }
+
 
     /**
       * rtc: rtc object
@@ -377,13 +391,7 @@
         return;
       }
 
-      /**
-       * A class defining the properties of the config parameter in the createClient method.
-       * Note:
-       *    Ensure that you do not leave mode and codec as empty.
-       *    Ensure that you set these properties before calling Client.join.
-       *  You could find more detail here. https://docs.agora.io/en/Video/API%20Reference/web/interfaces/agorartc.clientconfig.html
-      **/
+      
       rtc.client = AgoraRTC.createClient({mode: option.mode, codec: option.codec})
 
       rtc.params = option
