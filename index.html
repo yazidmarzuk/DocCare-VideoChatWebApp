@@ -4,27 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Basic Communication</title>
   <link rel="stylesheet" href="./assets/common.css" />
 </head>
 <body class="agora-theme">
-  <div class="navbar-fixed">
-    <nav class="agora-navbar">
-      <div class="nav-wrapper agora-primary-bg valign-wrapper">
-        <h5 class="left-align">Basic Communication</h5>
-        
-      </div>
-    </nav>
-  </div>
   
   <form id="form" class="row col l12 s12">
     <div class="row container col l12 s12">
-      <div class="col" style="min-width: 250px; max-width: 250px">
+      <div class="col" style="min-width: 433px; max-width: 443px">
         <div class="card" style="margin-top: 0px; margin-bottom: 0px;">
-          <div class="row card-content" style="margin-bottom: 10px;">
+          <div class="row card-content" style="margin-bottom: 0px;">
               <div class="input-field">
-                <label for="appID" class="active">App ID</label>
+                <label for="appID" class="active">App</label>
                 <input type="text" placeholder="App ID" name="appID">
               </div>
               <div class="input-field">
@@ -39,6 +31,8 @@
                 <div class="col s12">
                 <button class="btn btn-raised btn-primary waves-effect waves-light" id="join">JOIN</button>
                 <button class="btn btn-raised btn-primary waves-effect waves-light" id="leave">LEAVE</button>
+                <button class="btn btn-raised btn-primary waves-effect waves-light" id="publish">PUBLISH</button>
+                <button class="btn btn-raised btn-primary waves-effect waves-light" id="unpublish">UNPUBLISH</button>
                 </div>
               </div>
           </div>
@@ -272,12 +266,24 @@
 
     var option = {
       appID: "f7f36531cbe948cb88e6b0fa783b9a78",
-      channel: "Chemistry-MH102",
+      channel: "doccare",
       uid: null,
-      token: "006f7f36531cbe948cb88e6b0fa783b9a78IADFrM+1c/Qcdkofhco1jkReh547L1yCA1riYp2emdAfxquSFG0AAAAAEABlagsGZhwwXwEAAQBnHDBf",
+      token: "006f7f36531cbe948cb88e6b0fa783b9a78IACCs3ifSmYjzDU69PT8IDiEgYGRAf9CBa3q/WLNqIimS8Nw8oUAAAAAEABS+F3VkYgtXwEAAQCRiC1f",
     }
 
- 
+    var option = {
+      appID: "f7f36531cbe948cb88e6b0fa783b9a78",
+      channel: "dothraki",
+      uid: null,
+      token: "006f7f36531cbe948cb88e6b0fa783b9a78IACCs3ifSmYjzDU69PT8IDiEgYGRAf9CBa3q/WLNqIimS8Nw8oUAAAAAEABS+F3VkYgtXwEAAQCRiC1f",
+    }
+
+    var option = {
+      appID: "f7f36531cbe948cb88e6b0fa783b9a78",
+      channel: "hello",
+      uid: null,
+      token: "006f7f36531cbe948cb88e6b0fa783b9a78IACCs3ifSmYjzDU69PT8IDiEgYGRAf9CBa3q/WLNqIimS8Nw8oUAAAAAEABS+F3VkYgtXwEAAQCRiC1f",
+    }
 
 
     /**
